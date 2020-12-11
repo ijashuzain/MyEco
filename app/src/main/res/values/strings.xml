@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyECO</string>
+
+    <string-array name="LoanType">
+        <item>From</item>
+        <item>To</item>
+    </string-array>
+</resources>

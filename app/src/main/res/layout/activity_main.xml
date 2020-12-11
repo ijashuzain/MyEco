@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+
+        <Button
+            android:id="@+id/btn_statements"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="140dp"
+            android:layout_marginEnd="21dp"
+            android:layout_marginBottom="21dp"
+            android:text="STATEMENTS"
+            app:layout_constraintBottom_toTopOf="@+id/btn_income"
+            app:layout_constraintEnd_toStartOf="@+id/btn_expenses"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_expenses"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="140dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="21dp"
+            android:text="EXPENSES"
+            app:layout_constraintBottom_toTopOf="@+id/btn_loan"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_statements"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_income"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="21dp"
+            android:layout_marginBottom="280dp"
+            android:text="INCOME"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_loan"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_statements" />
+
+        <Button
+            android:id="@+id/btn_loan"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="280dp"
+            android:text="LOAN"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_income"
+            app:layout_constraintTop_toBottomOf="@+id/btn_expenses" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_float_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="100dp"
+            android:backgroundTint="#FFFFFF"
+            android:clickable="true"
+            app:backgroundTint="#4058DC"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_income"
+            app:rippleColor="#FFF2F2"
+            app:srcCompat="@android:drawable/ic_input_add" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_float_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="80dp"
+            android:backgroundTint="#FFFFFF"
+            android:clickable="true"
+            app:backgroundTint="#4058DC"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_loan"
+            app:srcCompat="@android:drawable/ic_menu_delete" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
